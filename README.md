@@ -12,13 +12,13 @@ You will have to sign up for a free trial account on Apigee Edge, which you can 
 
 ### Agenda
 * Introduction to Apigee Edge API Management
-* [Basic Concepts - Part 1: A Walk-through of the Apigee Edge Management UI, Orgs, Environments & Platform Users](../../VirtualAPIJam/Basic%20Concepts%20-%20Part%201)
-* [Lab 1: Design & Create an API Proxy](../VirtualAPIJam/Lab%201%20API%20Design%20-%20Create%20a%20Reverse%20Proxy%20from%20OpenAPI%20Spec)
-* [Lab 2: Secure your API with an API Key](../VirtualAPIJam/Lab%202%20API%20Security%20-%20Securing%20APIs%20with%20API%20Keys)
+* [Basic Concepts - Part 1: A Walk-through of the Apigee Edge Management UI, Orgs, Environments & Platform Users](../../Basic%20Concepts%20-%20Part%201)
+* [Lab 1: Design & Create an API Proxy](../../Lab%201%20API%20Design%20-%20Create%20a%20Reverse%20Proxy%20from%20OpenAPI%20Spec)
+* [Lab 2: Secure your API with an API Key](../../Lab%202%20API%20Security%20-%20Securing%20APIs%20with%20API%20Keys)
 * [Basic Concepts - Part 2: The relationship between Developers, Apps, API Keys, API Products & API Proxies](../VirtualAPIJam/Basic%20Concepts%20-%20Part%202)
-* [Lab 3: Create and publish an API product](../VirtualAPIJam/Lab%203%20API%20Publishing%20-%20API%20Products%20and%20Developer%20Portals)
-* [Lab 4: Consume your API Product](../VirtualAPIJam/Lab%204%20API%20Consumption%20-%20Developers%20and%20Apps)
-* [Lab 5: Traffic Management & Quotas](../VirtualAPIJam/Lab%205%20Traffic%20Management%20-%20Rate%20Limit%20APIs)
+* [Lab 3: Create and publish an API product](../../Lab%203%20API%20Publishing%20-%20API%20Products%20and%20Developer%20Portals)
+* [Lab 4: Consume your API Product](../../Lab%204%20API%20Consumption%20-%20Developers%20and%20Apps)
+* [Lab 5: Traffic Management & Quotas](../../Lab%205%20Traffic%20Management%20-%20Rate%20Limit%20APIs)
 * Apigee Analytics Overview
 
 #### Apigee Community 
