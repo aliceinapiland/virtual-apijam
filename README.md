@@ -12,7 +12,7 @@ You will have to sign up for a free trial account on Apigee Edge, which you can 
 
 ### Agenda
 * Introduction to Apigee Edge API Management
-* [Basic Concepts - Part 1: A Walk-through of the Apigee Edge Management UI, Orgs, Environments & Platform Users](../VirtualAPIJam/Basic%20Concepts%20-%20Part%201)
+* [Basic Concepts - Part 1: A Walk-through of the Apigee Edge Management UI, Orgs, Environments & Platform Users](../../VirtualAPIJam/Basic%20Concepts%20-%20Part%201)
 * [Lab 1: Design & Create an API Proxy](../VirtualAPIJam/Lab%201%20API%20Design%20-%20Create%20a%20Reverse%20Proxy%20from%20OpenAPI%20Spec)
 * [Lab 2: Secure your API with an API Key](../VirtualAPIJam/Lab%202%20API%20Security%20-%20Securing%20APIs%20with%20API%20Keys)
 * [Basic Concepts - Part 2: The relationship between Developers, Apps, API Keys, API Products & API Proxies](../VirtualAPIJam/Basic%20Concepts%20-%20Part%202)
