@@ -36,7 +36,7 @@ Basic understanding of [OpenAPI Specification](https://github.com/OAI/OpenAPI-Sp
 
   * File Name: **{your-initials}**_employee_api_spec
 
-  * URL: [http://playground.apistudio.io/070cde0a-44f7-4e2c-8085-6e1020db7baf/spec](http://playground.apistudio.io/070cde0a-44f7-4e2c-8085-6e1020db7baf/spec)
+  * URL: [https://raw.githubusercontent.com/apigee/apijam/master/Resources/employees-oas.json](https://raw.githubusercontent.com/apigee/apijam/master/Resources/employees-oas.json)
 
 ![image alt text](./media/image_2.png)
 

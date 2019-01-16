@@ -34,69 +34,67 @@ In this lab, we will see how to register as an App Developer, navigate through A
 
 ![image alt text](./media/image_2.png)
 
+* In this lab, we will play the role of an App Developer who would like to access the APIs and API Documentation.
+
+* Let’s register as an App Developer by clicking on the **Sign In** link on the home page.
+
 ![image alt text](./media/image_3.png)
 
-* In this lab, we will play the role of App Developer who would like to access the APIs and API Documentation.
-
-* Let’s register as an App Developer by clicking on **Sign Up** link on home page.
+* In the **Sign In** page, click on **Create account**
 
 ![image alt text](./media/image_4.png)
 
-* Fill the details, Click on **Create**.
+* Fill in the details and then click on **Create Account**
 
 ![image alt text](./media/image_5.png)
 
-* You will notice a message that says, **Check your Email**. Check your inbox for verification link.
+* As the message indicates, check your inbox to view the confirmation email.
 
 ![image alt text](./media/image_6.png)
 
-* Click on verification link in your inbox to login in as App Developer into Apigee Developer Portal. Notice your email address in developer portal menu link that indicates that you are logged in.
+* Click on the verification link in your confirmation email to verify your account. You will be redirected back to the developer portal.
 
 ![image alt text](./media/image_7.png)
 
+* Once again, click on the **Sign In** button, then fill in your Developer Portal credentials to log into the portal.
+
 ![image alt text](./media/image_8.png)
 
-* Click on **APIs** link in top menu and then click on **{your_initials}_{api_name}_product** category to access API Documentation.
+* Note that the **Sign In** button has been replaced with your email, indicating a successful login.
 
 ![image alt text](./media/image_9.png)
 
+* Click on the **APIs** link in the top menu to view the list of API Products associated to this portal.
+
 ![image alt text](./media/image_10.png)
 
-* Go through API Documentation and understand the API Request and Response.
+* Click on **{your_initials}_{api_name}_product** to view the API Product documentation
 
 ![image alt text](./media/image_11.png)
+
+* Go through API Documentation to view the list of APIs and visualize the API Request and Response.
+
+![image alt text](./media/image_12.png)
 
 * Let’s **create** a Developer App.
 
 Typically, developers who want to consume APIs go to developer portal and register to use them. When registering, the developer gets to select which of API products he or she wishes to use. For example, some products may be offered for free, while others require payment depending on a service plan. Upon completion, this registration step produces an Edge entity called a **developer app**. A developer app includes the products the developer selected and a set of API keys that the developer will be required to use to access the APIs that are associated with those products. 
 
-* To Create an App, Click on **Email Address** & then **My Apps** in top menu bar.
-
-![image alt text](./media/image_12.png)
-
-* Click on **Get Started** to create an App.
+* To Create an App, Click on your **Email Address** & then **My Apps** in the top menu bar.
 
 ![image alt text](./media/image_13.png)
 
-* Update App Name & Description. Click on **Create** button to create a new App.
+* Click on **+ New App** to create an App.
 
 ![image alt text](./media/image_14.png)
 
-* Click on **{your_intial}-employee-app** to access App Details.
+* Fill in the App's Name, Description, and click on the toggle to enable access to the Employee product.  Click on the **Create** button to create a new App.
 
 ![image alt text](./media/image_15.png)
 
-* Let’s add API Product to app before we user API keys, Click on **Manage Products** to add API Product to the App that we have created.
+* After the App has been created, the App page will now have a new section containing the API Key. Copy the key, which can be used to make secured API calls.
 
 ![image alt text](./media/image_16.png)
-
-* Choose **{your_initials}_{api_name}**_product & flip **Access** switch to **ON** and then click on **Save** to add API Product to the App.
-
-![image alt text](./media/image_17.png)
-
-* You have now successfully generated an API Key which can be used to make secured API Calls (You may need to refresh your browser to see the API Key).
-
-![image alt text](./media/image_18.png)
 
 * From the main Apigee UI (not the Developer Portal), go back to the Employee API you've already created and click the **Trace** tab in the upper right.
 
