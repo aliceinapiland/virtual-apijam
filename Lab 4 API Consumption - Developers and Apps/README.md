@@ -34,13 +34,13 @@ In this lab, we will see how to register as an App Developer, navigate through A
 
 ![image alt text](./media/image_2.png)
 
-* In this lab, we will play the role of App Developer who would like to access the APIs and API Documentation.
+* In this lab, we will play the role of an App Developer who would like to access the APIs and API Documentation.
 
-* Let’s register as an App Developer by clicking on **Sign Up** link on home page.
+* Let’s register as an App Developer by clicking on the **Sign In** link on the home page.
 
 ![image alt text](./media/image_3.png)
 
-* In the **Sign in** page, click on **Create account**
+* In the **Sign In** page, click on **Create account**
 
 ![image alt text](./media/image_4.png)
 
@@ -52,11 +52,11 @@ In this lab, we will see how to register as an App Developer, navigate through A
 
 ![image alt text](./media/image_6.png)
 
-* Click on verification link in your confirmation email to verify your account. You will be redirected back to the developer portal.inbox to login in as App Developer into Apigee Developer Portal.
+* Click on the verification link in your confirmation email to verify your account. You will be redirected back to the developer portal.
 
 ![image alt text](./media/image_7.png)
 
-* Once again, click on the **Sign In** button, then fill in your Devloper Portal credentials to log into the portal.
+* Once again, click on the **Sign In** button, then fill in your Developer Portal credentials to log into the portal.
 
 ![image alt text](./media/image_8.png)
 
@@ -80,7 +80,7 @@ In this lab, we will see how to register as an App Developer, navigate through A
 
 Typically, developers who want to consume APIs go to developer portal and register to use them. When registering, the developer gets to select which of API products he or she wishes to use. For example, some products may be offered for free, while others require payment depending on a service plan. Upon completion, this registration step produces an Edge entity called a **developer app**. A developer app includes the products the developer selected and a set of API keys that the developer will be required to use to access the APIs that are associated with those products. 
 
-* To Create an App, Click on **Email Address** & then **My Apps** in top menu bar.
+* To Create an App, Click on your **Email Address** & then **My Apps** in the top menu bar.
 
 ![image alt text](./media/image_13.png)
 
@@ -88,7 +88,7 @@ Typically, developers who want to consume APIs go to developer portal and regist
 
 ![image alt text](./media/image_14.png)
 
-* Fill in the App's Name, Description, and toggle the product to enable access to that product.  Click on **Create** button to create a new App.
+* Fill in the App's Name, Description, and click on the toggle to enable access to the Employee product.  Click on the **Create** button to create a new App.
 
 ![image alt text](./media/image_15.png)
 
