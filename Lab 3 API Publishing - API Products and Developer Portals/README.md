@@ -102,7 +102,7 @@ Note: We are adding the entire API Proxy to the API Product.  We can just as eas
 
 * The Portal will display the OpenAPI Specification (Swagger UI) for browsing the APIs included in the product.  The view below contains two collapsed operations and one expanded to show the details of the operation.  Depending on the method, you’d expect to see model details, response codes, etc., as per the [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md).
 
-![image alt text](./media/image_12.png)
+![image alt text](./media/image_14.png)
 
 # Lab Video
 
