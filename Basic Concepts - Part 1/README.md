@@ -14,7 +14,7 @@ Here are some basic concepts to introduce you to the Apigee Edge API Management 
 ![image alt text](./media/edge_wheel_of_pain.jpg)
 
 Here's a brief video to explain what Apigee does:
-[![image alt text](./media/explainer_video_link.jpg)](https://youtu.be/LssHa1Y_i0g)
+[![image alt text](./media/explainer_video_link.jpg)](https://youtu.be/FPj_va9-rM8)
 
 # The Apigee Edge Management UI
 
@@ -74,7 +74,7 @@ The 'prod' environment is typically used for promoting API proxies from the test
 
 ### Understanding API Proxies, Policies & Flows
 
-In Apigee Edge, an API Proxy is a facade for one or more APIs, generic HTTP services, or applications (such as Node.js).
+In Apigee Edge, an API proxy is a facade for one or more APIs, generic HTTP services, or applications (such as Node.js).
 The facade provided by an API proxy decouples the app developer and app client-facing API from the 'backend' functionality invoked for API execution, thereby shielding developers from code changes and enabling innovation at the edge without impacting your internal development teams. As development teams make backend changes, developers continue to call the same interface uninterrupted. Apigee enables you to expose multiple interfaces to the same API, freeing you to customize the signature of an API to meet the needs of various developer niches simultaneously.
 An API proxy is implemented as a set of configuration files, policies, and code that rely on a set of resources provided by Apigee Edge. API proxies can be generated and configured using the Apigee Edge management UI, or they can be implemented locally in a text editor or IDE.
 

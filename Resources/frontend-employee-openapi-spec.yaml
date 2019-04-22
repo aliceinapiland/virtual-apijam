@@ -1,0 +1,192 @@
+swagger: '2.0'
+info:
+  # updated title and version
+  version: 1
+  title: Employees API
+  contact:
+    # update with your name and email
+    name: YOUR NAME HERE
+    email: YOUR EMAIL HERE
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+# add your org to host
+host: YOURORG-test.apigee.net
+basePath: /employees/v1
+schemes:
+  # http removed
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+
+# get API key from query parameter
+securityDefinitions:
+  apikey:
+    type: apiKey
+    in: query
+    name: apikey
+    description: All requests must include an API key in the apikey query parameter.
+
+# use apikey for every call
+security:
+  - apikey: []
+
+paths:
+  /:
+    get:
+      summary: Get all Employees
+      description: This endpoint returns a list of all Employees as an array.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/EmployeesArray'
+    post:
+      summary: Create a new Employee
+      description: This endpoint will create a new Employee.
+      parameters:
+        - name: body
+          required: true
+          description: an Employee oject
+          in: body
+          schema:
+            $ref: '#/definitions/Employee'
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/Employee'
+  '/{employee-uuid}':
+    get:
+      summary: Get an Employee with given UUID
+      description: This endpoint returns an Employee.
+      parameters:
+        - name: employee-uuid
+          in: path
+          required: true
+          description: UUID of an Employee
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/Employee'
+    put:
+      summary: Update an Employee with given UUID
+      description: This endpoint will update an existing Employee.
+      parameters:
+        - name: employee-uuid
+          in: path
+          required: true
+          description: UUID of a Employee
+          type: string
+        - name: body
+          required: true
+          description: an Employee oject
+          in: body
+          schema:
+            $ref: '#/definitions/Employee'
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/Employee'
+    delete:
+      summary: Delete an Employee with given UUID
+      description: This endpoint will delete an existing Employee.
+      parameters:
+        - name: employee-uuid
+          in: path
+          required: true
+          description: UUID of a Employee
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/Employee'
+definitions:
+  EmployeesArray:
+    type: array
+    items:
+      type: object
+      properties:
+        uuid:
+          type: string
+        type:
+          type: string
+        name:
+          type: string
+        created:
+          type: integer
+        modified:
+          type: integer
+        birthDate:
+          type: string
+        city:
+          type: string
+        department:
+          type: string
+        email:
+          type: string
+        gender:
+          type: string
+        isActive:
+          type: boolean
+        metadata:
+          type: object
+          properties:
+            path:
+              type: string
+            size:
+              type: integer
+        phone:
+          type: string
+        postal:
+          type: integer
+        state:
+          type: string
+        street:
+          type: string
+  Employee:
+    type: object
+    properties:
+      uuid:
+        type: string
+      type:
+        type: string
+      name:
+        type: string
+      created:
+        type: integer
+      modified:
+        type: integer
+      birthDate:
+        type: string
+      city:
+        type: string
+      department:
+        type: string
+      email:
+        type: string
+      gender:
+        type: string
+      isActive:
+        type: boolean
+      metadata:
+        type: object
+        properties:
+          path:
+            type: string
+          size:
+            type: integer
+      phone:
+        type: string
+      postal:
+        type: integer
+      state:
+        type: string
+      street:
+        type: string

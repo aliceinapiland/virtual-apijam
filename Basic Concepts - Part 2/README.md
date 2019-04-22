@@ -32,7 +32,7 @@ Typically, this type of bundling allows API producers to decouple the developmen
 
 ### API Keys
 
-On Apigee Edge, API proxies bundled within API Products, can be accessed using an API Key. Each client application registered by app developers on Edge, is assigned an API Key and API Secret. These app credential pair allows access to one or more API Products.
+On Apigee Edge, API proxies bundled within API products, can be accessed using an API key. Each client application registered by app developers on Edge, is assigned an API key and API secret. This app credential pair allows access to one or more API products.
 
 ![image alt text](./media/api_product.png)
 
@@ -48,7 +48,7 @@ Apigee Edge provides you with a Developer Portal that you can use to build and l
 
 # Relationship between Developers -> Apps -> API Keys -> API Products -> API Proxies
 
-The following image depicts the relationship between the different configuration entities on Apigee Edge, i.e. App Developers, Apps, API Keys, API Products and API Proxies.
+The following image depicts the relationship between the different configuration entities on Apigee Edge, i.e. app developers, apps, API keys, API products and API proxies.
 
 ![image alt text](./media/org_entity_relationships.png)
 

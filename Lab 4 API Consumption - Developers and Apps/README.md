@@ -6,13 +6,13 @@
 
 # Use case
 
-As an App Developer you would like to learn about APIs exposed by the API Team using API Documentation. Register into an API Program to get access to the APIs exposed by the API Team.
+As an app developer you would like to learn about APIs exposed by the API Team using API Documentation. Register using the Developer Portal to get access to the APIs exposed by the API Team.
 
 # How can Apigee Edge help?
 
-Apigee Edge has out of the box lightweight Developer Portal which allows API Team to publish API Documentation & as an App Developer you can self register onto API Platform. Once logged in, you can create Apps to get API Keys using which you can access APIs securely.
+Apigee Edge has an out-of-the-box lightweight Developer Portal which allows the API Team to publish API Documentation. As an app developer you can self register with API Platform. Once logged in, you can create apps to get API keys.  API keys can be used to access protected APIs.
 
-In this lab, we will see how to register as an App Developer, navigate through API documentation, create app in the Developer Portal to access API keys, test the APIs using the keys we got from Developer Portal.
+In this lab, we will see how to register as an app developer, create an app in the Developer Portal to access API keys, and test the APIs using the keys we got from the Developer Portal.
 
 # Pre-requisites
 
@@ -20,23 +20,19 @@ In this lab, we will see how to register as an App Developer, navigate through A
 
 # Instructions
 
-* Go to [https://apigee.com/edge](https://apigee.com/edge) and log in. This is the Edge management UI. 
+* Go to [https://login.apigee.com/](https://login.apigee.com/) and log in.
 
-* Select **Publish → Portals** in the side navigation menu.
-
-![image alt text](./media/image_0.png)
-
-* Click on **{your_initials}_{api_proxy_name}_portal** that you have created in earlier lab exercise.	
+* Select **Publish → Portals** in the side navigation menu. Select the developer portal that you created in earlier lab exercise.	
 
 ![image alt text](./media/image_1.png)
 
-* Click on **Live Portal** link to access Developer Portal to start interacting as Developer persona.
+* Click on the **Live Portal** link to access the Developer Portal to start interacting as a developer.
 
 ![image alt text](./media/image_2.png)
 
-* In this lab, we will play the role of an App Developer who would like to access the APIs and API Documentation.
+* In this lab, we will play the role of an app developer who would like to access the APIs and API Documentation.
 
-* Let’s register as an App Developer by clicking on the **Sign In** link on the home page.
+* Let’s register as an app developer by clicking on the **Sign In** link on the home page.
 
 ![image alt text](./media/image_3.png)
 
@@ -64,11 +60,11 @@ In this lab, we will see how to register as an App Developer, navigate through A
 
 ![image alt text](./media/image_9.png)
 
-* Click on the **APIs** link in the top menu to view the list of API Products associated to this portal.
+* Click on the **APIs** link in the top menu to view the list of API products associated to this portal.
 
 ![image alt text](./media/image_10.png)
 
-* Click on **{your_initials}_{api_name}_product** to view the API Product documentation
+* Click on the employee product to view the API Product documentation.
 
 ![image alt text](./media/image_11.png)
 
@@ -76,23 +72,23 @@ In this lab, we will see how to register as an App Developer, navigate through A
 
 ![image alt text](./media/image_12.png)
 
-* Let’s **create** a Developer App.
+* Let’s **create** a developer app.
 
-Typically, developers who want to consume APIs go to developer portal and register to use them. When registering, the developer gets to select which of API products he or she wishes to use. For example, some products may be offered for free, while others require payment depending on a service plan. Upon completion, this registration step produces an Edge entity called a **developer app**. A developer app includes the products the developer selected and a set of API keys that the developer will be required to use to access the APIs that are associated with those products. 
+Typically, developers who want to consume APIs go to the developer portal and register to use them. When registering, the developer gets to select which of the API products he or she wishes to use. For example, some products may be offered for free, while others require payment depending on a service plan. Upon completion, this registration step produces an Edge entity called a **developer app**. A developer app includes the products the developer selected and a set of API keys that the developer will be required to use to access the APIs that are associated with those products. 
 
-* To Create an App, Click on your **Email Address** & then **My Apps** in the top menu bar.
+* To Create an app, Click on your **Email Address** & then **My Apps** in the top menu bar.
 
 ![image alt text](./media/image_13.png)
 
-* Click on **+ New App** to create an App.
+* Click on **+ New App** to create an app.
 
 ![image alt text](./media/image_14.png)
 
-* Fill in the App's Name, Description, and click on the toggle to enable access to the Employee product.  Click on the **Create** button to create a new App.
+* Fill in the app's name, description, and click on the toggle to enable access to the Employee product.  Click on the **Create** button to create a new developer app.
 
 ![image alt text](./media/image_15.png)
 
-* After the App has been created, the App page will now have a new section containing the API Key. Copy the key, which can be used to make secured API calls.
+* After the app has been created, the app page will now have a new section containing the API key. Copy the key, which can be used to make secured API calls.
 
 ![image alt text](./media/image_16.png)
 
@@ -100,15 +96,11 @@ Typically, developers who want to consume APIs go to developer portal and regist
 
 * Click **Start Trace Session** to begin a trace session.
 
-* Click **Send** to send a request (Do not add the API Key to they query string yet).
+* Click **Send** to send a request. (Do not add the API key to the query string yet). You should see a 401 (Unauthorized) response for your API call because the API proxy was expecting an API key as a query parameter.  See the trace session below.
 
-   You should see a 401 (unauthorized) response for your API Call because the API Proxy was expecting an API Key as a query      parameter.  See the trace session below
+* Now add the query parameter ```?apikey={your_api_key}``` to the URL in the trace tool and try again.  (Replace ```{your_api_key}``` with the API key you just copied in this lab and resend the request. You should see a 2xx response code and the Trace for that request should show that the Verify API Key policy is now passing.
 
-* Now add the query parameter ```?apikey={your_api_key}``` to the URL in the trace tool and try again.  (Replace ```{your_api_key}``` with the API Key you just created in this Lab and resend the request.
-
-   You should see a 2xx response code and the Trace for that request should show that the Verify API Key policy is now            passing.
-
-![image alt text](./media/image_19.png)
+![image alt text](./media/image_17.png)
 
 # Lab Video
 
@@ -116,25 +108,27 @@ If you like to learn by watching, here is a short video on consuming APIs using 
 
 # Earn Extra-points
 
-Now that you have Registered in Developer Portal, Created App, Read API Documentation, Explore more by making an API call using keys generated above.
+* Now that you have registered in your developer portal and created an app, read the API documentation, and explore more by making more API calls using keys generated above.
+
+* Explore the Edge UI (not the developer portal) and find and examine the developer and developer app you created using the developer portal.
 
 # Quiz
 
-1. When you create an App, What are the different keys associated with it ?
+1. When you create an app, what are the different keys associated with it?
 
-2. Is it possible to create different Apps with same App Name ?
+2. Is it possible to create different apps with same app name?
 
-3. Is it possible to associate multiple API Products with same App ?
+3. Is it possible to associate multiple API products with same app?
 
 # Summary
 
-That completes this hands-on lesson. In this simple lab you learned how to self register as a Developer to access APIs, Create Apps, Access API Keys, and Navigate through API Documentation.
+That completes this hands-on lesson. In this simple lab you learned how to self register as an app developer to access APIs, create apps, access API keys, and navigate through API documentation.
 
 # References
 
-* Useful Apigee documentation links on Apigee Developer Portal.
+* Useful Apigee documentation link on lightweight Apigee developer portal:
 
-    * Apigee Developer Portal , [https://docs-new.apigee.com/portal](https://docs-new.apigee.com/portal)
+    * Apigee Developer Portal: [https://docs-new.apigee.com/portal](https://docs-new.apigee.com/portal)
 
 # Rate this lab
 
