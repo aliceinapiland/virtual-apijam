@@ -36,7 +36,7 @@ Basic understanding of [OpenAPI Specification](https://github.com/OAI/OpenAPI-Sp
 
   * File Name: Employee Backend
 
-  * URL: [https://raw.githubusercontent.com/apigeekdemos/virtual-apijam/master/Resources/employee-openapi-spec.yaml](https://raw.githubusercontent.com/apigeekdemos/virtual-apijam/master/Resources/employee-openapi-spec.yaml)
+  * URL: [https://raw.githubusercontent.com/apigee/apijam/master/Resources/employee-openapi-spec.json](https://raw.githubusercontent.com/apigee/apijam/master/Resources/employee-openapi-spec.json)
 
 ![image alt text](./media/image_2.png)
 
