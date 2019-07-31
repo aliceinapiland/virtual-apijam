@@ -24,37 +24,9 @@ Basic understanding of [OpenAPI Specification](https://github.com/OAI/OpenAPI-Sp
 
 * Go to [https://apigee.com/edge](https://apigee.com/edge) and log in. This is the Edge management UI. 
 
-* Select **Develop → Specs** in the side navigation menu
+* Select **Develop → API Proxies** in the side navigation menu
 
 ![image alt text](./media/image_0.png)
-
-* Click **+Spec.** Click on **Import URL** to add a new spec from existing source.
-
-![image alt text](./media/image_1.png)
-
-* Enter the spec details.
-
-  * File Name: Employee Backend
-
-  * URL: [https://raw.githubusercontent.com/aliceinapiland/virtual-apijam/master/Resources/employee-openapi-spec.yaml](https://raw.githubusercontent.com/aliceinapiland/virtual-apijam/master/Resources/employee-openapi-spec.yaml)
-
-![image alt text](./media/image_2.png)
-
-**	**
-
-* Verify the values and click **Import**.
-
-* Spec has been imported into Apigee Edge & Ready to use. You should see your spec in the list.
-
-![image alt text](./media/image_3.png)
-
-* Click on the spec from the list to access the OpenAPI spec editor and interactive documentation that lists the backend API details and resources.
-
-![image alt text](./media/image_4.png)
-
-* It’s time to create Apigee API Proxy from Open API Spec. Click on **Develop > API Proxies** from side navigation menu.
-
-![image alt text](./media/image_5.png)
 
 * Click **+Proxy** The Build a Proxy wizard is invoked. 
 ![image alt text](./media/image_6.png)
@@ -63,11 +35,16 @@ Basic understanding of [OpenAPI Specification](https://github.com/OAI/OpenAPI-Sp
 
 ![image alt text](./media/image_7.png)
 
-* You should see a popup with list of specs. Select **Employee Backend** and click **Select.** 
+* You should see a popup with access to either use a previously imported Open API Spec, upload a new Spec or Import from a URL. Select the **Import from a URL** tab. Here, provide the following values:
+  * Spec Name: Employee Backend
+
+  * URL: [https://raw.githubusercontent.com/aliceinapiland/virtual-apijam/master/Resources/employee-openapi-spec.yaml](https://raw.githubusercontent.com/aliceinapiland/virtual-apijam/master/Resources/employee-openapi-spec.yaml)
+
+* Click **Select.** 
 
 ![image alt text](./media/image_8.png)
 
-* You can see the selected OpenAPI Spec URL below the Reverse Proxy option, Click **Next** to continue.
+* You can see the imported OpenAPI Spec URL below the Reverse Proxy option, Click **Next** to continue.
 
 ![image alt text](./media/image_9.png)
 
@@ -106,6 +83,34 @@ Basic understanding of [OpenAPI Specification](https://github.com/OAI/OpenAPI-Sp
 ![image alt text](./media/image_16.png)
 
 * *Congratulations!* ...You have now built a reverse proxy for an existing backend service.
+
+* You can also import and edit Open API Specs within Apigee. Click on **Develop > Specs** from side navigation menu.
+
+![image alt text](./media/image_5.png)
+
+* Click **+Spec.** Click on **Import URL** to add a new spec from existing source.
+
+![image alt text](./media/image_1.png)
+
+* Enter the spec details.
+
+  * File Name: Employee Backend
+
+  * URL: [https://raw.githubusercontent.com/aliceinapiland/virtual-apijam/master/Resources/employee-openapi-spec.yaml](https://raw.githubusercontent.com/aliceinapiland/virtual-apijam/master/Resources/employee-openapi-spec.yaml)
+
+![image alt text](./media/image_2.png)
+
+* Verify the values and click **Import**.
+
+* Spec has been imported into Apigee Edge & Ready to use. You should see your spec in the list.
+
+![image alt text](./media/image_3.png)
+
+* Click on the spec from the list to access the OpenAPI spec editor and interactive documentation that lists the backend API details and resources.
+
+![image alt text](./media/image_4.png)
+
+# Test the API Proxy
 
 * Let us test the newly built API proxy using the [Apigee REST Client](https://apigee-restclient.appspot.com/). Open the REST Client in a new browser window.  
 
