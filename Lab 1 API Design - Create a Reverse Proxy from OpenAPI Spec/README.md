@@ -123,7 +123,7 @@ Basic understanding of [OpenAPI Specification](https://github.com/OAI/OpenAPI-Sp
 ![image alt text](./media/image_18.png)
 
 * You should see a success response similar to this:
-![image alt text](./media/image_19.jpg)
+![image alt text](./media/image_19.png)
 
 # Download the API Proxy
 
